@@ -1,5 +1,15 @@
+@import url('./howToPlay.scss');
+@import url('./FAQ.scss');
+
+@font-face {
+  font-family: 'Fredoka One';
+  src: url('../assets/FredokaOne-Regular.ttf');
+}
+
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  --font-family: 'Fredoka One', sans-serif;
+  --second-family: 'Comfortaa', sans-serif;
+  --third-family: 'Cleo Folk Demo', sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
@@ -12,4 +22,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #fdc52b;
 }
