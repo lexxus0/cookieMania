@@ -1,0 +1,267 @@
+.home {
+  background-image: url('../img/home/home-mobile-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  min-height: 553px;
+  padding: 132px 0 34px 0;
+
+  @include media(desktop) {
+    background-image: url('../img/home/home-desktop-bg.jpg');
+  }
+
+  @include resolution(mobile) {
+    background-image: url('../img/home/home-mobile-bg@2x.jpg');
+  }
+
+  @include resolution(desktop) {
+    background-image: url('../img/home/home-desktop-bg@2x.jpg');
+  }
+
+  &-container {
+    @include media(desktop) {
+      padding: 0 115px;
+    }
+  }
+
+  &-inner {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 34px;
+
+    @include media(desktop) {
+      flex-direction: row;
+      margin-bottom: 0;
+    }
+  }
+
+  &-content {
+  }
+
+  &-title {
+    text-align: center;
+    margin-bottom: 23px;
+    z-index: 1;
+    position: relative;
+    width: 276px;
+    color: #fdd24f;
+
+    font-family: 'Cleo Folk Demo';
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @include media(desktop) {
+      font-size: 87px;
+      width: 570px;
+      text-align: left;
+      margin-top: 34px;
+      margin-bottom: 64px;
+    }
+  }
+
+  &-title::before {
+    content: '';
+    position: absolute;
+    top: 15px;
+    left: 0;
+    background-image: url('/img/home/home-mobile-title-decor-2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 266px;
+    height: 59px;
+    z-index: -1;
+
+    @include media(desktop) {
+      background-image: url('../img/home/home-desktop-title-decor-2.png');
+      width: 548px;
+      height: 77px;
+      top: 35px;
+      left: -25px;
+    }
+
+    @include resolution(mobile) {
+      background-image: url('../img/home/home-mobile-title-decor-2@2x.png');
+    }
+
+    @include resolution(desktop) {
+      background-image: url('../img/home/home-desktop-title-decor-2@2x.png');
+    }
+  }
+
+  &-title::after {
+    content: '';
+    position: absolute;
+    background-image: url('../img/home/home-mobile-title-decor-1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    width: 49px;
+    height: 34px;
+    top: -10px;
+    right: -8px;
+
+    @include media(desktop) {
+      background-image: url('../img/home/home-desktop-title-decor-1.png');
+      width: 100px;
+      height: 68px;
+      top: -20px;
+      right: 50px;
+    }
+
+    @include resolution(mobile) {
+      background-image: url('../img/home/home-mobile-title-decor-1@2x.png');
+    }
+
+    @include resolution(desktop) {
+      background-image: url('../img/home/home-desktop-title-decor-1@2x.png');
+    }
+  }
+
+  &-subtitle {
+    color: #000;
+    font-family: var(--second-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 14px;
+
+    @include media(desktop) {
+      font-size: 24px;
+      width: 570px;
+      margin-bottom: 79px;
+    }
+  }
+}
+
+.home-img {
+  &--wrapper {
+    position: relative;
+    width: 217px;
+    height: 249px;
+    margin: 0 auto;
+
+    @include media(desktop) {
+      width: 370px;
+      height: 426px;
+    }
+  }
+}
+
+.home-phone-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 99px;
+
+  @include media(desktop) {
+    width: 167px;
+  }
+}
+.home-phone-2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.home-phone-3 {
+  position: absolute;
+  top: 18px;
+  right: 0;
+  width: 99px;
+
+  @include media(desktop) {
+    width: 167px;
+  }
+}
+
+.home-btn {
+  &--googleplay {
+    color: #fefdfe;
+    font-family: 'Fredoka One';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 229px;
+    margin: 0 auto;
+    display: block;
+    padding: 7px 18px 5px 12px;
+    border-radius: 10px;
+    border: 1px solid #108c0a;
+    border: 3px solid #fff;
+    background: linear-gradient(180deg, #d6fe81 0%, #36aa13 100%);
+    position: relative;
+    transition: background 0.3s ease-in;
+
+    @include media(desktop) {
+      margin: 0;
+    }
+  }
+
+  &--googleplay::before {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    background: url('../img/home/google-play.png') no-repeat center center/27px
+        47px,
+      linear-gradient(180deg, #d6fe81 0%, #36aa13 100%);
+    transition: background 0.3s ease-in;
+  }
+}
+
+.home-btn {
+  &--googleplay:hover {
+    @include media(desktop) {
+      background: linear-gradient(180deg, #c1ff3e 0%, #2bbb00 100%);
+    }
+
+    &::before {
+      @include media(desktop) {
+        background: url('../img/home/google-play.png') no-repeat center
+            center/27px 47px,
+          linear-gradient(180deg, #c1ff3e 0%, #2bbb00 100%);
+      }
+    }
+  }
+
+  &--googleplay:focus {
+    @include media(desktop) {
+      background: linear-gradient(180deg, #2bbb00 0%, #2bbb00 100%);
+    }
+
+    &::before {
+      @include media(desktop) {
+        background: url('../img/home/google-play.png') no-repeat center
+            center/27px 47px,
+          linear-gradient(180deg, #2bbb00 0%, #2bbb00 100%);
+      }
+    }
+  }
+}
+
+.home-btn--googleplay-desktop {
+  display: none;
+
+  @include media(desktop) {
+    display: block;
+  }
+}
+.home-btn--googleplay-mobile {
+  display: block;
+
+  @include media(desktop) {
+    display: none;
+  }
+}

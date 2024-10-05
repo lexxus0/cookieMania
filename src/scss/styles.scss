@@ -10,6 +10,15 @@
   src: url('../assets/FredokaOne-Regular.ttf');
 }
 
+@font-face {
+  font-family: 'Cleo Folk Demo';
+  src: url(../fonts/cleo-folk-demo.regular.woff2) format('woff2'),
+    url(../fonts/cleo-folk-demo.regular.woff) format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --font-family: 'Fredoka One', sans-serif;
   --second-family: 'Comfortaa', sans-serif;
