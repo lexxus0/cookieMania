@@ -17,7 +17,7 @@ const swiper = new Swiper('.swiper', {
       return `
           <span class="${className}">
             <svg class="reviewsSvg" width="35" height="10">
-              <use href="/img/icons/sprite.svg#swiper"></use>
+              <use href="./img/icons/sprite.svg#swiper"></use>
             </svg>
           </span>`;
     },
