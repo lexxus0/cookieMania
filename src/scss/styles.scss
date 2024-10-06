@@ -38,5 +38,22 @@
 }
 
 body {
+  font-family: Comfortaa;
+  font-size: 24px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  color: #000;
   background-color: #fdc52b;
+}
+
+.container {
+  max-width: 320px;
+  padding: 0 16px;
+  margin: 0 auto;
+
+  @include media(desktop) {
+    max-width: 1200px;
+    padding: 0 15px;
+  }
 }
