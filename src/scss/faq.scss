@@ -1,0 +1,169 @@
+.faqSection {
+  padding: 14px 0;
+  background-image: url('../img/HowToPlay/Rectangle371.png');
+  background-repeat: repeat;
+  padding-bottom: 174px;
+  display: flex;
+  z-index: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+  max-width: 320px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 52px;
+    background-image: url('../img/HowToPlay/sg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    max-width: 1200px;
+  }
+}
+
+.faqHeading {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 8px;
+    font-size: 40px;
+  }
+}
+
+.accordion-container {
+  row-gap: 14px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: 1200px) {
+    row-gap: 18px;
+  }
+}
+
+.accordion {
+  background: #fff;
+  display: flex;
+  z-index: 50;
+  cursor: pointer;
+  border: none;
+  text-align: left;
+  padding: 12px 20px;
+  padding-right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 30px;
+  width: 288px;
+  height: 55px;
+  transition: background-color 0.4s ease, transform 0.2s ease;
+  @media screen and (min-width: 1200px) {
+    width: 970px;
+    height: 62px;
+  }
+}
+
+.accordion:hover {
+  background-color: #b2ebf2;
+}
+
+.accordion.active {
+  background-color: #6887ed;
+}
+
+.icon-container {
+  background-color: green;
+  border-radius: 35px;
+  fill: #18c51e;
+  border-left: 1px solid #000;
+  width: 55px;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  color: #000;
+  margin-left: 11px;
+  @media screen and (min-width: 1200px) {
+    width: 61.5px;
+    height: 62px;
+  }
+}
+.faqTextSpan {
+  font-family: var(--font-family);
+
+  width: 200px;
+  line-height: 100%;
+
+  @media screen and (min-width: 1200px) {
+    width: auto;
+  }
+}
+
+.accordion.active .faqTextSpan {
+  color: #fff;
+}
+
+.accordion.active .icon-container {
+  background-color: #130498;
+}
+
+.panel,
+.open {
+  background-color: #cbd3ee;
+  padding: 20px 12px 0 4px;
+  margin-top: -35px;
+  margin-left: 1px;
+  border: 1px solid #000;
+  border-radius: 0 0 8px 8px;
+  width: 248px;
+  height: 68px;
+  overflow: hidden;
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.5s ease, opacity 0.5s ease;
+  @media screen and (min-width: 1200px) {
+    width: 870px;
+    padding-top: 30px;
+    margin-left: 0;
+    margin-top: -45px;
+  }
+}
+
+.panel.open {
+  opacity: 1;
+}
+
+.panel p {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  color: #000;
+}
+
+.faqSpan {
+  font-size: 30px;
+  font-family: var(--second-family);
+}
+
+.faqMinus {
+  display: none;
+  font-size: 40px;
+  color: #fff;
+  font-family: var(--second-family);
+}
+
+.accordion.active .faqMinus {
+  display: block;
+}
+
+.accordion.active .faqSpan {
+  display: none;
+}
