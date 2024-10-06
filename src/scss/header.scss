@@ -10,6 +10,9 @@
     content: '';
     position: absolute;
     background-image: url('../img/header/header-mobile-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     height: 50px;
     width: 100%;
 
