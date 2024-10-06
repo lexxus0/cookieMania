@@ -65,7 +65,7 @@
     content: '';
     position: absolute;
     top: 15px;
-    left: 0;
+    left: 15px;
     background-image: url('/img/home/home-mobile-title-decor-2.png');
     background-repeat: no-repeat;
     background-size: cover;
@@ -101,7 +101,7 @@
     width: 49px;
     height: 34px;
     top: -10px;
-    right: -8px;
+    right: 0px;
 
     @include media(desktop) {
       background-image: url('../img/home/home-desktop-title-decor-1.png');
