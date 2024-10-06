@@ -1,15 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page 2</title>
-  </head>
-  <body>
-    <section>
-      <a href="./index.html">Go to home</a>
-      <h1>Welcome to page 2</h1>
-    </section>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="/cookieMania/favicon.jpg" />
+  <title>Privacy Policy</title>
+  <script type="module" crossorigin src="/cookieMania/assets/vendor-b60c0f82.js"></script>
+  <script type="module" crossorigin src="/cookieMania/assets/main-830d90c9.js"></script>
+  <link rel="stylesheet" href="/cookieMania/assets/main-9e9d84d8.css">
+  <link rel="stylesheet" href="/cookieMania/assets/vendor-ecee2773.css">
+</head>
+
+<body id="pages">
+  <header class="header">
+  <div class="container">
+    <div class="header-wrapper">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#benefits" class="nav-link">Benefits</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about-this-game" class="nav-link">About This Game</a>
+          </li>
+        </ul>
+      </nav>
+
+      <a href="index.html" class="nav-logo">
+        <picture>
+          <source media="(min-width: 320px)" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACoAAAApCAMAAAB0iUvHAAAABGdBTUEAALGPC/xhBQAAAAFzUkdCAK7OHOkAAAAJcEhZcwAACxMAAAsTAQCanBgAAAL3UExURUdwTP/cU/STI/WSJPKSJfOiLKhZhffYU//gVvORJP/gVrF1iP7YUf7cV//fVv/fVs5bwLdEsvLLX96dd9aqFeetF9i/J//fVv/gVvLEJuTQRvjPKf/fV/OTJdqAk/STJP/gVf/eVvSTJPOUJPOTJP7ARGjm7f/fVv+9QvSTJP+7Qf6+Q+OUNsFyH5d0PLqJMi8WD2jj6vu4QFYwFzofE7+NMnHAts+cN++xPm3RzGZMH5NnIoNcHG3n7aB3K2rd55RyK2LR14Tl62w0LMWVNnHS4EQgF/Id9++QI+qMIzhwd47i5yURDuicOEYsFHrj6k0lEuMr6+q3E3dZJ7FpHXNnSqx7LkdoT1slHF3K0E6hoWPX3Xfo7u6kO7Xv9Pi0QF8wG2VAIaBwS3qRaLCCL1NQLkORlffXVD6KilCnqla7v9V+IWTc46pkHFFAHkYzIfTTI4mPgmVaR/CqPGySv3eLhe7OTzsmKUFoaJvt8oZnK0mBgKi8uzdrbEaa28b1+IfX2nehjT9LQ+fbMlfCyo23tFnOLlSdnXez2DNeXlaQk3p2bJ/l6W+bnUpANGlLN3FXOShFQ47s8YnNxjx8e8/Gut309d6lOmZyZU6xvKLM5fTvSXWqrGk+SMawn1hna96nO8bX6oZATWGtrupG7FqMPCCNGi2wH7GoIhpPg8y9I6pwKIV1UE0mKZAkx833+YSZmr+QZDGs7IhtPpx1N5oJ1mKjpU+54rQU6l7E7HrCb2K5vuHaWoN/Z8d/K3W1r1mpOXnLz9kowNWse0++LEKTRKRhG0WMIOKHIrlEotugOdyYN5iLFtetQdvQIhQ0crGKO9iZCaAO3WxyrJaLTJ1Nbnt0wqSCW8Ye6rmJCt7i2xNAi4jK88qfbNhw1fXqLW12dNXRyPWgLWolm4tCtzJsG69PyG/TTClwz3LnOEqhWquZ02KajY6R1OanO3FnXxwiQhwjRsqYE7Qg08LDVpOiiuSgOD2by5qxko6rg3K/Ue7KjMPceG6fITkAAAAldFJOUwCfXPKfKQSY/ICJEXP0gtp7R/7+tL23UJpkyK+ov/3IQoy5sIC/W+BeAAAE40lEQVQ4y43VZVQbWRgG4C4sbLcu624zk2SyEIgSD5AshEAgaUjR4L64uxZ3d4q3SKE4hdJu3d3dfd13f+ydCND195zJ3Pm+5+TemeTcWbJkIYYgS/5PDJevXbNm7fL/xAbLVq9cf73TweG9dUv/nNXLDBbJZUsRZN2hz0Ac1vsjf82qefkOghxzPPedmp4zMjIaNVqUUcdjCPKGVq5A/E9mCM+fvtjZ6XDxPA+WSmEYFghMYHWk6RnG/sgKtVy+EjGeg3nRg6cnJyfHonmwDQATU1PZGgqu5qjISvXtvo7EesOwiTB6cGxs8G6eCWzD4YSkbt9eP0/h2VjkA4yuQixpsNqeOROdJ3WtSKioEKZObP+Jp54fWw2NjnyI0ZcQ40obc2B5QqHUPME9LS1tm3vD1atTqRNAgQbMoVkiL2ipGSy1sTHnuAK4reby5epb1dWbNzfkpbpy4CIYrvx9ZjHFpioqArB6eNjLy+vCtWstACe4mkths6zGxucpx7XCvaZl2MvCYyMWD689LTVpCUUc2Ex2I+t56lIQE1HoZQEishBRRBs3NrfsuZXmvsMv6VL4Ymo23ZV4hMiA6J4D7Rb2VDBwjHuYmrwneYR+hNjHli1Q2oMuOmRLdIMgFbfZog+FQIyvPGz9bRSC0KgoBnuBPt7LhSA38K0goSRbNVXFNbd7tkHqJBrfflFL993DelEYQVmkLzV9z/Z2imYEKTZYzVO+tgahpnyRj2ZYev/6gGbUlrLBWkeV1DbfTKa8DYVQFTMuFAVnCC27e78ZnMBU8vHPddQnnuGrrAtVSJjUWubXW7b4oChfjvrcuSNH+UwGWpufu/+ghvoDWt56s0QRJpFISCe2iH1RukRCR31YKGrXykf5AQvUMR+XmRQT2R8pIZFI31w5EYajk0hcHIqiDEodoH7O+611VMng5g9FjPRT7OxIlDigVPb2chwINSyzFkcVB+rWGstNorrtTBxhUxk43GGKiFTrRuwTeWKUWcIHn74duocVy81NtCUSsRaOYMoWMU2JRCJ5gE3AUUlhWJGbO09PeitBk6COKYviiFFWXKRvGKVUjtWiUjTU4K2Zme/Psom2WipXGBPAHI6RZaVku69YWE2Vr6GvNTZmbe0NZanU0I2uuMAiqGxtWQoymRwZU0aIcjO1FGvoK+E3jm/tPRqaeBjQH9l2nmQRlWBKtSOTPSOGiuPZROLOTGfNE3hVFp51vPcoU1le4luSGWbvQSZTSBSKh0dpRPLcuF9KeXm+n5a+KZOFb73EYipT4lPiW+sKFWUe9iJ7cuFsckNlTlNugFhcpaOGb8tOnfqWW5dUJRaLld7ev/z8Q2HMzaGc5PR0oVPQeEFSVYDz/E8QLqOfzQh0LggIqLq3a9ev09PexcVNObuFPJ6LU1CgX0FxR4f2T7jidnCEQJAd1BQYGNC9dxPIro4dOyoFISYmIcDW19dnx+y00sMWYIC36gdFs93Z2c7dPQ8ePdrUHeRkthvIvCdP8gROTk6CRGu8ejs2fB8f7M3jpbu4uATt6+7Z29PzWBCSzjOBn4Fd3OFZSIhgNhj/rnZ318cHG2Xk0Gi0uaddBw4c6HpKo2FXh74AOdSUYRSM19ft8Xr6eHzwp/+Ug3i8vt7CW+Nj/L/lI4PnXjF6L/9dPgGHnhb+AQaO9wmP5vyYAAAAAElFTkSuQmCC 1x, /cookieMania/assets/logo@2x-46183987.png 2x"
+            type="image/png" />
+          <img class="nav-logo--img" src="data:image/png;base64,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" alt="Logo" width="40" height="40" loading="lazy" />
+        </picture>
+      </a>
+
+      <nav class="nav">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="" class="nav-link">How to Play</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">FAQ</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a href="" class="nav-link">Gallery</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header-mobile--btn" type="button">
+        <svg class="header-mobile--burger-svg" width="60" height="30">
+          <use href="/cookieMania/assets/sprite-2b337d2d.svg#burger-menu"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-overlay">
+  <nav class="mobile-nav">
+    <div class="mobile-close--btn-wrapper">
+      <button class="mobile-close--btn" type="button">
+        <svg class="mobile-close--svg" width="20" height="20">
+          <use href="/cookieMania/assets/sprite-2b337d2d.svg#close-menu"></use>
+        </svg>
+      </button>
+    </div>
+    <ul class="mobile-nav--list">
+      <li class="mobile-nav--item">
+        <a class="mobile-nav--link" href="#home">Home</a>
+      </li>
+      <li class="mobile-nav--item">
+        <a class="mobile-nav--link" href="#benefits">Benefits</a>
+      </li>
+      <li class="mobile-nav--item">
+        <a class="mobile-nav--link" href="#about-this-game">About This Game</a>
+      </li>
+      <li class="mobile-nav--item">
+        <a class="mobile-nav--link" href="#how-to-play">How to Play</a>
+      </li>
+      <li class="mobile-nav--item">
+        <a class="mobile-nav--link" href="#faq">FAQ</a>
+      </li>
+      <li class="mobile-nav--item">
+        <a class="mobile-nav--link" href="#reviews">Reviews</a>
+      </li>
+      <li class="mobile-nav--item">
+        <a class="mobile-nav--link" href="#gallery">Gallery</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+  <main>
+    <section class="privacyPolicySection">
+  <h1 class="policyHeading">Privacy Policy</h1>
+  <p class="policyParagraph">
+    This privacy policy will explain how our organization uses the personal data we collect from you when you use our
+    website.
+    GAMESTARBLISS.COM is a free online gaming platform where the gamer can play and win without any risks. It is a
+    simple
+    portal to access social games for free and play with your friends. Remember that winning at these games does not
+    mean
+    you will have any future winnings. It is crucial that you remember this since your luck will differ depending on
+    many
+    factors. Have fun and Play as much as you like.
+  </p>
+  <h2 class="policySecondHeading">Marketing</h2>
+  <p class="policyParagraph">
+    You have the right at any time to stop GAMESTARBLISS.COM contacting you for marketing purposes.
+    GAMESTARBLISS.COM would like to send you information about products and services of ours that we think you might
+    like,
+    as well as those of our partner companies.
+    If you have agreed to receive marketing, you may always opt out at a later date.
+    If you no longer wish to be contacted for marketing purposes, please contact us.
+  </p>
+  <div class="policyDataRights">
+    <h2 class="policySecondHeading">
+      What are your data protection rights?
+    </h2>
+    <p class="policyParagraph">Cool play GAMESTARBLISS.COMvault.com would like to make sure you are fully aware of
+      all of your data protection rights.
+      Every user is entitled to the following: <br><br>
+      <span class="policyStrongText"> The right to access</span> – You have the right to request GAMESTARBLISS.COM for
+      copies of your personal data.<br><br>
+
+      <span class="policyStrongText"> The right to rectification</span> – You have the right to request that
+      GAMESTARBLISS.COM correct any information you
+      believe is
+      inaccurate. You also have the right to request us to complete the information you believe is incomplete.<br><br>
+
+      <span class="policyStrongText"> The right to erasure</span> – You have the right to request that GAMESTARBLISS.COM
+      erase your personal data, under certain
+      conditions.<br><br>
+
+      <span class="policyStrongText"> The right to restrict processing</span> – You have the right to request that
+      GAMESTARBLISS.COM restrict the processing of
+      your
+      personal data, under certain conditions.<br><br>
+
+      <span class="policyStrongText"> The right to object to processing </span>– You have the right to object to
+      GAMESTARBLISS.COM processing of your personal
+      data,
+      under certain conditions.<br><br>
+
+      <span class="policyStrongText"> The right to data portability </span>– You have the right to request that
+      GAMESTARBLISS.COM transfer the data that we have
+      collected to another organization, or directly to you, under certain conditions.<br>
+    </p>
+  </div>
+  <h2 class="policySecondHeading">Changes to our privacy policy</h2>
+  <p class="policyParagraph">GAMESTARBLISS.COM keeps its privacy policy under regular review and places any updates on
+    this web page.</p>
+</section>
+  </main>
+  <footer class="footer">
+  <div class="footerWrapper">
+    <p class="footerParagraph">All rights reserved <br> gamestarbliss.com | 2024</p>
+    <div class="footerPages">
+      <a class="footerLinks" href="/PrivacyPolicy.html" target="_blank">Privacy policy</a>
+      <span class="footerSpan">|</span>
+      <a class="footerLinks" href="/TermsOfUse.html" target="_blank">Terms and conditions</a>
+    </div>
+  </div>
+</footer>
+
+  
+</body>
+
 </html>
