@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import svg from '/img/icons/sprite.svg#swiper';
 
 Swiper.use([Pagination]);
 
@@ -17,7 +18,7 @@ const swiper = new Swiper('.swiper', {
       return `
           <span class="${className}">
             <svg class="reviewsSvg" width="35" height="10">
-              <use href="./img/icons/sprite.svg#swiper"></use>
+              <use href=${svg}></use>
             </svg>
           </span>`;
     },
