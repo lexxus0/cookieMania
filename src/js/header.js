@@ -30,7 +30,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const targetElement = document.querySelector(targetId);
 
         if (targetElement) {
-          targetElement.scrollIntoView({ behavior: 'smooth' });
+          const targetPosition =
+            targetElement.getBoundingClientRect().top + window.scrollY;
+
+          window.scrollTo({
+            top: targetPosition - 80,
+            behavior: 'smooth',
+          });
         }
       }
 
