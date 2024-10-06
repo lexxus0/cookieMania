@@ -1,0 +1,68 @@
+#pages {
+  background-image: url('../img/HowToPlay/policymob.png');
+  padding-top: 30px;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/HowToPlay/policyDesk.png');
+    padding-top: 50px;
+  }
+}
+
+.privacyPolicySection {
+  margin: 0 auto;
+  max-width: 280px;
+  box-shadow: 0 0 12px 0 #fff;
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 26px;
+  padding: 15px;
+  margin-top: 100px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+
+  @media screen and (min-width: 1200px) {
+    max-width: 970px;
+    margin-top: 90px;
+  }
+}
+
+.policyHeading {
+  display: none;
+}
+
+.policySecondHeading {
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 32px;
+  @media screen and (min-width: 1200px) {
+    font-size: 28px;
+    margin-bottom: 56px;
+  }
+}
+
+.policyParagraph {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 14px;
+  text-align: left;
+  color: #000;
+  @media screen and (min-width: 1200px) {
+    font-size: 18px;
+  }
+}
+
+.policyStrongText {
+  font-family: var(--font-family);
+}
+
+.policyParagraph:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.policyDataRights {
+  margin-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 80px;
+  }
+}
