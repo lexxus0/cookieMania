@@ -22,12 +22,6 @@
     background-image: url('../img/home/home-desktop-bg@2x.jpg');
   }
 
-  &-container {
-    @include media(desktop) {
-      padding: 0 115px;
-    }
-  }
-
   &-inner {
     display: flex;
     flex-direction: column;
@@ -38,9 +32,6 @@
       margin-bottom: 0;
     }
   }
-
-  // &-content {
-  // }
 
   &-title {
     text-align: center;
