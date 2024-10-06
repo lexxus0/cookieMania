@@ -4,6 +4,7 @@
   left: 0;
   width: 100%;
   background-color: #fdc52b;
+  z-index: 100;
 
   &::after {
     content: '';

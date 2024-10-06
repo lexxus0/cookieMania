@@ -1,0 +1,60 @@
+.about-this-game {
+  padding: 28px 0;
+
+  @include media(desktop) {
+    padding: 40px 0;
+  }
+
+  &--container {
+    @include media(desktop) {
+      padding: 0 115px;
+    }
+  }
+
+  &--title {
+    color: #000;
+    text-align: center;
+    font-family: 'Fredoka One';
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 32px;
+
+    @include media(desktop) {
+      font-size: 40px;
+      margin-bottom: 56px;
+    }
+  }
+
+  &--inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    @include media(desktop) {
+      gap: 30px;
+      align-items: center;
+    }
+  }
+
+  &--img {
+    border-radius: 40px;
+    overflow: hidden;
+  }
+
+  &--text {
+    color: #000;
+    font-family: Comfortaa;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    @include media(desktop) {
+      font-size: 24px;
+      order: 1;
+      flex-basis: 570px;
+    }
+  }
+}
