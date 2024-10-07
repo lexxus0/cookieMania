@@ -3,7 +3,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #fdc52b;
+  background-color: #ffc704;
   z-index: 100;
 
   &::after {
@@ -14,10 +14,14 @@
     background-size: cover;
     background-position: center center;
     height: 42px;
-    width: 100%;
+    width: 330px;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
 
     @include media(desktop) {
       background-image: url('../img/header/header-desktop-bg.png');
+      width: 1200px;
     }
 
     @include resolution(mobile) {
