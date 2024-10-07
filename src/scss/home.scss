@@ -48,6 +48,9 @@
     font-weight: 400;
     line-height: normal;
 
+    text-shadow: -2px -2px 0 #641825, 2px -2px 0 #641825, -2px 2px 0 #641825,
+      2px 2px 0 #641825;
+
     @include media(desktop) {
       font-size: 87px;
       width: 570px;
