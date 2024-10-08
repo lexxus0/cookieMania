@@ -179,49 +179,33 @@
 }
 
 .home-btn {
-  &--googleplay {
-    color: #fefdfe;
-    font-family: 'Fredoka One';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    width: 229px;
-    margin: 0 auto;
-    display: block;
-    padding: 7px 18px 5px 12px;
-    border-radius: 10px;
-    border: 1px solid #108c0a;
+  &--googleplay-box {
     border: 3px solid #fff;
-    background: linear-gradient(180deg, #d6fe81 0%, #36aa13 100%);
+    border-radius: 12px;
     position: relative;
+    background: linear-gradient(180deg, #d6fe81 0%, #36aa13 100%);
     transition: background 0.3s ease-in;
-
-    @include media(desktop) {
-      margin: 0;
-    }
   }
 
-  &--googleplay::before {
+  &--googleplay-box::before {
     content: '';
     position: absolute;
-    right: -10px;
+    right: -6px;
     top: 50%;
     transform: translateY(-50%);
     width: 72px;
     height: 72px;
     border-radius: 50%;
-    border: 3px solid #fff;
+    border: 1px solid #108c0a;
+    z-index: 1;
+    pointer-events: none;
     background: url('../img/home/google-play.png') no-repeat center center/27px
         47px,
       linear-gradient(180deg, #d6fe81 0%, #36aa13 100%);
     transition: background 0.3s ease-in;
   }
-}
 
-.home-btn {
-  &--googleplay:hover {
+  &--googleplay-box:hover {
     @include media(desktop) {
       background: linear-gradient(180deg, #c1ff3e 0%, #2bbb00 100%);
     }
@@ -235,7 +219,7 @@
     }
   }
 
-  &--googleplay:focus {
+  &--googleplay-box:focus {
     @include media(desktop) {
       background: linear-gradient(180deg, #2bbb00 0%, #2bbb00 100%);
     }
@@ -250,15 +234,51 @@
   }
 }
 
+.home-btn {
+  &--googleplay {
+    color: #fefdfe;
+    font-family: 'Fredoka One';
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
+    width: 229px;
+    margin: 0 auto;
+    display: inline-block;
+    padding: 7px 18px 5px 12px;
+    border-radius: 10px;
+    border: 1px solid #108c0a;
+    position: relative;
+    text-shadow: 0px 2px 2px #765d8f;
+
+    @include media(desktop) {
+      margin: 0;
+    }
+  }
+
+  &--googleplay::before {
+    content: '';
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 78px;
+    height: 78px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+  }
+}
+
 .home-btn--googleplay-desktop {
   display: none;
 
   @include media(desktop) {
-    display: block;
+    display: inline-block;
   }
 }
 .home-btn--googleplay-mobile {
-  display: block;
+  display: inline-block;
 
   @include media(desktop) {
     display: none;
