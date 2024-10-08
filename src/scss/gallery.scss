@@ -1,4 +1,4 @@
-@keyframes scrollGallery {
+@keyframes scrollGalleryInfinite {
   0% {
     transform: translateX(0);
   }
@@ -37,12 +37,20 @@
   }
 }
 
+.galleryNonVisible {
+  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: none;
+  }
+}
+
 .galleryPictures {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin: 0 auto;
-  animation: scrollGallery 20s linear infinite;
+  animation: scrollGalleryInfinite 15s linear infinite;
+  width: calc(252px * 14 + 12px * 13);
 
   @media screen and (min-width: 1200px) {
     animation: none;
@@ -67,7 +75,7 @@
 
 .galleryLowerPicturesItems {
   display: flex;
-  column-gap: 50px;
+  column-gap: 12px;
 
   @media screen and (min-width: 1200px) {
     column-gap: 60px;
