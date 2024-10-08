@@ -1,7 +1,7 @@
 .faqSection {
   padding: 14px 0;
-  background-image: url('../img/HowToPlay/Rectangle371.png');
-  background-repeat: repeat;
+  background-image: url('../img/faq/Rectangle371.png');
+
   padding-bottom: 174px;
   display: flex;
   z-index: 1;
@@ -15,8 +15,7 @@
 
   @media screen and (min-width: 1200px) {
     padding-top: 52px;
-    background-image: url('../img/HowToPlay/sg.png');
-    background-repeat: no-repeat;
+    background-image: url('../img/faq/sg.png');
     background-size: cover;
     max-width: 1200px;
   }
@@ -102,6 +101,7 @@
 
   width: 200px;
   line-height: 100%;
+  font-size: 12.9px;
 
   @media screen and (min-width: 1200px) {
     width: auto;
