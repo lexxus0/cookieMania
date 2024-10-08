@@ -250,7 +250,7 @@
     border-radius: 10px;
     border: 1px solid #108c0a;
     position: relative;
-    text-shadow: 0px -2px 2px #765d8f;
+    text-shadow: 0px 2px 2px #765d8f;
 
     @include media(desktop) {
       margin: 0;
