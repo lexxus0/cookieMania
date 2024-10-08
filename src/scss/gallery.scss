@@ -1,3 +1,12 @@
+@keyframes scrollGallery {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-252px * 7 - 24px * 6));
+  }
+}
+
 .gallerySection {
   background: url('../img/gallery/gagaga.png') repeat;
   padding-bottom: 40px;
@@ -5,11 +14,12 @@
   position: relative;
   max-width: 320px;
   scroll-margin-top: 100px;
+  overflow: hidden;
 
   @media screen and (min-width: 1200px) {
     background-image: url('../img/gallery/deskdeskdesk.png');
     max-width: 1200px;
-    padding-bottom: 33px;
+    padding-bottom: 60px;
   }
 }
 
@@ -29,15 +39,29 @@
 
 .galleryPictures {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 21px;
-  margin: 0 auto;
   justify-content: space-evenly;
+  align-items: center;
+  margin: 0 auto;
+  animation: scrollGallery 20s linear infinite;
 
   @media screen and (min-width: 1200px) {
+    animation: none;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 21px;
     justify-content: center;
     max-width: 1200px;
     column-gap: 60px;
+  }
+}
+
+.galleryPicturesItemDesktop {
+  display: block;
+  min-width: 252px;
+  transform: rotate(-15deg);
+
+  @media screen and (min-width: 1200px) {
+    transform: none;
   }
 }
 
@@ -50,22 +74,10 @@
   }
 }
 
-.galleryPicturesItemDesktop {
-  display: none;
-
-  @media screen and (min-width: 1200px) {
-    display: block;
-  }
-}
-
 @media screen and (min-width: 1200px) {
-  .galleryPicturesItem {
-    display: none;
+  .galleryPicturesItem:hover,
+  .galleryPicturesItemDesktop:hover {
+    transform: scale(1.5) rotate(-15deg);
+    transition: all 0.25s ease-in-out;
   }
-}
-
-.galleryPicturesItem:hover,
-.galleryPicturesItemDesktop:hover {
-  transform: rotate(-15deg);
-  transition: all 0.25s ease-in-out;
 }
