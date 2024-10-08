@@ -7,6 +7,7 @@
   padding: 132px 0 34px 0;
   max-width: 320px;
   margin: 0 auto;
+  scroll-margin-top: 100px;
 
   @include media(desktop) {
     max-width: 1200px;
@@ -22,12 +23,6 @@
     background-image: url('../img/home/home-desktop-bg@2x.jpg');
   }
 
-  &-container {
-    @include media(desktop) {
-      padding: 0 115px;
-    }
-  }
-
   &-inner {
     display: flex;
     flex-direction: column;
@@ -38,9 +33,6 @@
       margin-bottom: 0;
     }
   }
-
-  // &-content {
-  // }
 
   &-title {
     text-align: center;
@@ -55,6 +47,9 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    text-shadow: -2px -2px 0 #641825, 2px -2px 0 #641825, -2px 2px 0 #641825,
+      2px 2px 0 #641825;
 
     @include media(desktop) {
       font-size: 87px;
