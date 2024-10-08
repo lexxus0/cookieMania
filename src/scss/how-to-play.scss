@@ -38,7 +38,7 @@
 }
 
 .howToPlayDiv {
-  background: center / cover no-repeat url('../img/HowToPlay/1.png');
+  background: center / cover no-repeat url('../img/how-to-play/1.png');
   height: 254px;
   border-radius: 40px;
   padding: 30px 15px;
@@ -46,7 +46,7 @@
   margin: 0 auto;
 
   @media screen and (min-width: 1200px) {
-    background-image: url('../img/HowToPlay/55.png');
+    background-image: url('../img/how-to-play/55.png');
     height: 390px;
     width: 570px;
     display: flex;

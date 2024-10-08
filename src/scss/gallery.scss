@@ -1,5 +1,5 @@
 .gallerySection {
-  background: url('../img/HowToPlay/gagaga.png') repeat;
+  background: url('../img/gallery/gagaga.png') repeat;
   padding-bottom: 40px;
   margin: 0 auto;
   position: relative;
@@ -7,7 +7,7 @@
   scroll-margin-top: 100px;
 
   @media screen and (min-width: 1200px) {
-    background-image: url('../img/HowToPlay/deskdeskdesk.png');
+    background-image: url('../img/gallery/deskdeskdesk.png');
     max-width: 1200px;
     padding-bottom: 33px;
   }
