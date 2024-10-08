@@ -35,87 +35,10 @@
   }
 
   &-title {
-    text-align: center;
-    margin-bottom: 23px;
-    z-index: 1;
-    position: relative;
-    width: 276px;
-    color: #fdd24f;
-
-    font-family: 'Cleo Folk Demo';
-    font-size: 42px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    text-shadow: -2px -2px 0 #641825, 2px -2px 0 #641825, -2px 2px 0 #641825,
-      2px 2px 0 #641825;
+    width: 285px;
 
     @include media(desktop) {
-      font-size: 87px;
-      width: 570px;
-      text-align: left;
-      margin-top: 34px;
-      margin-bottom: 64px;
-    }
-  }
-
-  &-title::before {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-image: url('/img/home/home-mobile-title-decor-2.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    width: 266px;
-    height: 59px;
-    z-index: -1;
-
-    @include media(desktop) {
-      background-image: url('../img/home/home-desktop-title-decor-2.png');
-      width: 548px;
-      height: 77px;
-      top: 35px;
-      left: -25px;
-    }
-
-    @include resolution(mobile) {
-      background-image: url('../img/home/home-mobile-title-decor-2@2x.png');
-    }
-
-    @include resolution(desktop) {
-      background-image: url('../img/home/home-desktop-title-decor-2@2x.png');
-    }
-  }
-
-  &-title::after {
-    content: '';
-    position: absolute;
-    background-image: url('../img/home/home-mobile-title-decor-1.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    width: 49px;
-    height: 34px;
-    top: -10px;
-    right: 0px;
-
-    @include media(desktop) {
-      background-image: url('../img/home/home-desktop-title-decor-1.png');
-      width: 100px;
-      height: 68px;
-      top: -20px;
-      right: 50px;
-    }
-
-    @include resolution(mobile) {
-      background-image: url('../img/home/home-mobile-title-decor-1@2x.png');
-    }
-
-    @include resolution(desktop) {
-      background-image: url('../img/home/home-desktop-title-decor-1@2x.png');
+      width: 594px;
     }
   }
 
@@ -182,9 +105,11 @@
   &--googleplay-box {
     border: 3px solid #fff;
     border-radius: 12px;
-    position: relative;
+    width: 229px;
+    margin: 0 auto;
     background: linear-gradient(180deg, #d6fe81 0%, #36aa13 100%);
     transition: background 0.3s ease-in;
+    position: relative;
   }
 
   &--googleplay-box::before {
@@ -236,21 +161,11 @@
 
 .home-btn {
   &--googleplay {
-    color: #fefdfe;
-    font-family: 'Fredoka One';
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-
-    width: 229px;
-    margin: 0 auto;
-    display: inline-block;
+    display: flex;
     padding: 7px 18px 5px 12px;
     border-radius: 10px;
     border: 1px solid #108c0a;
     position: relative;
-    text-shadow: 0px 2px 2px #765d8f;
 
     @include media(desktop) {
       margin: 0;
@@ -278,7 +193,7 @@
   }
 }
 .home-btn--googleplay-mobile {
-  display: inline-block;
+  display: block;
 
   @include media(desktop) {
     display: none;

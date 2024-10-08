@@ -2,7 +2,34 @@
   <div class="container section-container">
     <div class="home-inner">
       <div class="home-content">
-        <h1 class="home-title">Cookie Mania</h1>
+        <h1 class="home-title visually-hidden">Cookie Mania</h1>
+        <div class="home-title">
+          <picture class="">
+            <source
+              media="(min-width: 1200px)"
+              srcset="
+                /img/home/home-decktop-title.png    1x,
+                /img/home/home-decktop-title@2x.png 2x
+              "
+              type="image/png"
+            />
+            <source
+              media="(min-width: 320px)"
+              srcset="
+                /img/home/home-mobile-title.png    1x,
+                /img/home/home-mobile-title@2x.png 2x
+              "
+              type="image/png"
+            />
+            <img
+              src="/img/home/home-decktop-title.png"
+              alt="Cookie Mania"
+              width="594"
+              height="159"
+              loading="lazy"
+            />
+          </picture>
+        </div>
         <h2 class="home-subtitle">
           Unleash Your Inner Baker with the Sweetest Match-3 Adventure!
         </h2>
@@ -11,15 +38,14 @@
             class="home-btn--googleplay"
             href="https://play.google.com/store/apps/details?id=com.ezjoynetwork.cookiemania&hl=uk"
             target="_blank"
-            >Google Play</a
-          >
+            ><img
+              src="/img/home/google-play-text.svg"
+              alt="Google Play"
+              width="143"
+              height="33"
+              loading="lazy"
+          /></a>
         </div>
-        <!-- <a
-          class="home-btn--googleplay home-btn--googleplay-desktop"
-          href="https://play.google.com/store/apps/details?id=com.ezjoynetwork.cookiemania&hl=uk"
-          target="_blank"
-          >Google Play</a
-        > -->
       </div>
       <div class="home-img--wrapper">
         <picture class="home-phone-1">
@@ -109,14 +135,13 @@
         class="home-btn--googleplay"
         href="https://play.google.com/store/apps/details?id=com.ezjoynetwork.cookiemania&hl=uk"
         target="_blank"
-        >Google Play</a
-      >
+        ><img
+          src="/img/home/google-play-text.svg"
+          alt="Google Play"
+          width="143"
+          height="33"
+          loading="lazy"
+      /></a>
     </div>
-    <!-- <a
-      class="home-btn--googleplay home-btn--googleplay-mobile"
-      href="https://play.google.com/store/apps/details?id=com.ezjoynetwork.cookiemania&hl=uk"
-      target="_blank"
-      >Google Play</a
-    > -->
   </div>
 </section>
