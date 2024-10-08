@@ -6,8 +6,8 @@
   scroll-margin-top: 100px;
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    padding-left: 100px;
     padding: 0;
+
     mask-image: linear-gradient(
       to right,
       rgba(0, 0, 0, 1) 97%,
@@ -21,6 +21,12 @@
       rgba(0, 0, 0, 0.05) 99%,
       rgba(0, 0, 0, 0) 100%
     );
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .swiper-slide-active {
+    margin-right: -70px !important;
   }
 }
 
@@ -41,6 +47,9 @@
   margin: 0 auto;
   overflow: hidden;
   border-radius: 16px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 140px !important;
+  }
 }
 
 .reviewsDeskImg {
@@ -90,7 +99,7 @@
   align-items: stretch;
 
   @media screen and (min-width: 1200px) {
-    left: -245px;
+    left: -200px;
     top: 30px;
   }
 }

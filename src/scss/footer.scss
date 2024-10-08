@@ -15,7 +15,7 @@
 .footerWrapper {
   display: flex;
   justify-content: space-around;
-  margin: 0 16px;
+  margin: 10px 16px;
 
   @media screen and (min-width: 1200px) {
     margin: 12px;
@@ -75,5 +75,11 @@
     font-weight: bold;
     font-size: 22px;
     color: #000;
+  }
+}
+
+.br {
+  @media screen and (min-width: 1200px) {
+    display: none;
   }
 }
