@@ -6,7 +6,7 @@ import svg from '/img/icons/sprite.svg#swiper';
 
 Swiper.use([Pagination]);
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.swiper', { 
   direction: 'horizontal',
   loop: true,
   slidesPerView: 1,
