@@ -86,6 +86,13 @@
   .galleryPicturesItem:hover,
   .galleryPicturesItemDesktop:hover {
     transform: scale(1.5) rotate(-15deg);
-    transition: all 0.25s ease-in-out;
+    z-index: 2;
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .galleryPicturesItem:hover,
+  .galleryPicturesItemDesktop:not(:hover) {
+    transform: scale(1) rotate(0deg);
+    transition: transform 0.25s ease-in-out;
   }
 }
